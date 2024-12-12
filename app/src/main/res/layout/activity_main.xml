@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B0C4DE"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <!-- Logo ou imagem principal -->
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:src="@drawable/giovaneclothes"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Formulário de login -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="4dp">
+
+        <!-- TextView Usuario -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usuário"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- Campo de entrada de usuário -->
+        <EditText
+            android:id="@+id/edtusr"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#999999"
+            android:textColor="#333333"
+            android:inputType="textEmailAddress"
+            android:hint="Digite seu email"
+            android:textSize="16sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"/>
+
+        <!-- TextView Senha -->
+        <TextView
+            android:id="@+id/textViewSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Senha"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Campo de entrada de senha -->
+        <EditText
+            android:id="@+id/edtsenha"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#999999"
+            android:textColor="#333333"
+            android:inputType="textPassword"
+            android:hint="Digite sua senha"
+            android:textSize="16sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"/>
+
+        <!-- Botão de login -->
+        <Button
+            android:id="@+id/btlogar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#111"
+            android:text="Entrar"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_gravity="center"/>
+
+        <!-- Link para criar conta -->
+        <TextView
+            android:id="@+id/linkCriaConta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sem conta? Crie uma aqui"
+            android:textAlignment="center"
+            android:textColor="#111"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

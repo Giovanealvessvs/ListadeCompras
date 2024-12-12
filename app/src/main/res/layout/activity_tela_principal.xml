@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp">
+    <!-- Txt categoria -->
+    <TextView
+        android:id="@+id/txtcategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categoria"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Categoria da roupa -->
+    <Spinner
+        android:id="@+id/spnCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione o item"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Quantidade da roupa -->
+    <TextView
+        android:id="@+id/tvQuantidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantidade: "
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botões para alterar a quantidade -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnAdicionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adicionar"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#111"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnRemover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remover"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#FF6347"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>
